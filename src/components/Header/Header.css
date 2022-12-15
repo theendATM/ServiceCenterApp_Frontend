@@ -6,10 +6,11 @@
   justify-content:space-between;
 }
 
-.but:active{
+.but:hover ,.but:focus{
   color: hsla(194, 64%, 42%, 1);
-  border-color: hsla(195, 5%, 84%, 1);
   border-width: 2px;
+  border-radius: 8px;
+  border-color:#D3D6D7;
 }
 
 .but{
