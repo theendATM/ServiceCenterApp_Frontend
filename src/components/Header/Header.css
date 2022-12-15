@@ -1,0 +1,59 @@
+.header{
+  display: flex;
+  margin-top:32px;
+  margin-left: 12px;
+  margin-right: 3.5%;
+  justify-content:space-between;
+    
+}
+
+.but:active{
+  color: hsla(194, 64%, 42%, 1);
+  border-color: hsla(195, 5%, 84%, 1);
+  border-width: 2px;
+}
+
+.but{
+  border-width: 0;
+  background: none;
+  padding: 10px, 16px, 10px, 16px;
+  
+}
+
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.rightPart{
+    display: flex;
+    gap:10%;
+    align-items: center;
+    justify-content: right;
+}
+
+.searchBox{
+    height: 43px;
+    display: flex;
+    align-items: center;
+    width:35%;
+}
+
+.searchBox img{
+    height: 23px;
+    padding: 10px;
+}
+
+.searchBox, .searchBox input{
+    background-color:#EAEBEB;
+}
+
+.searchBox input{
+    border: none;
+    margin-right: 10px;
+    width:90%;
+}
+
+.searchBox input:focus {
+    outline: none;
+}

@@ -3,13 +3,18 @@ import './Header.css'
 
 const Header=()=>{
   return(
-    <div>
-      <input type='button'>Stock</input>
-      <input type='button'>Transactions</input>
-      <p className="address"> Откуда подгружаем адрес??</p>
-      <div className="searchBox">
-        <img src={search} alt=''></img>
-        <input type='text'></input>
+    <div className='header'>
+      <div className='buttons'>
+        <input className='but' type='button' value="Stock"></input>
+      <input className='but' type='button' value="Transactions"></input>
+      </div>
+      
+      <div className='rightPart'>
+        <span className="address"> Откуда подгружаем адрес??</span>
+        <div className="searchBox">
+          <img src={search} alt=''></img>
+          <input type='text' placeholder='search'></input>
+        </div>
       </div>
       
     </div>
