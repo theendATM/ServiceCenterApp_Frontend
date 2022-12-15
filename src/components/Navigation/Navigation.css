@@ -1,0 +1,35 @@
+.nav{
+    width: 19.5%;
+    height: 100vh;
+    background-color: #DBDBDB;
+    position: fixed; 
+}
+
+.act{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.act button{
+    padding: 6% 20px;
+    text-align: left;
+    margin: 0 7%;
+    border: none;
+    background: none;
+    
+}
+
+.act button:hover{
+    color: #268EAF;
+    background-color: hsla(194, 8%, 45%, 0.17);
+    border-radius: 6px;
+}
+
+.nav img{
+    width: 32%; 
+    border-radius: 100px;
+    margin-top: 26px;
+    margin-left: 12.5%;
+    margin-bottom: 47px;
+}
