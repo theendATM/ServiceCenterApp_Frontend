@@ -32,28 +32,28 @@
     justify-content: right;
 }
 
-.searchBox{
+.searchBoxHeader{
     height: 43px;
     display: flex;
     align-items: center;
     width:35%;
 }
 
-.searchBox img{
+.searchBoxHeader img{
     height: 23px;
     padding: 10px;
 }
 
-.searchBox, .searchBox input{
+.searchBoxHeader, .searchBoxHeader input{
     background-color:#EAEBEB;
 }
 
-.searchBox input{
+.searchBoxHeader input{
     border: none;
     margin-right: 10px;
     width:90%;
 }
 
-.searchBox input:focus {
+.searchBoxHeader input:focus {
     outline: none;
 }

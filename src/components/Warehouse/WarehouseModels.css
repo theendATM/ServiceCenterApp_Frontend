@@ -1,0 +1,86 @@
+.warehouseModels{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+
+  th, table{
+    border: 1px solid #E1E1E1;
+  }
+
+  td{
+    border-right: 1px solid #E1E1E1;
+  }
+
+  th{
+    background-color: #EFF0F0;
+    text-align: center;
+  }
+
+  td:not(.textCenter){
+    padding-left: 1%;
+  }
+
+  button, button img{
+    border: none;
+    background-color: none;
+  }
+
+  .textCenter{
+    text-align: center;
+  }
+
+
+  .panel{
+    display: flex;
+    height: 48px;
+    margin-bottom: 30px;
+    justify-content: flex-start !important;
+    width: 90%;
+    gap:4%;
+  }
+
+  .searchBox{
+    color: #9EA3AE;
+    background-color: #EAEBEB;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    width:40%;
+  }
+
+  .searchBox select{
+    background-color: #EAEBEB;
+    border:none;
+    color: #9EA3AE;
+    margin-right: 8px;
+  }
+
+  .checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10%;
+  }
+
+  .checkboxes label{
+    margin-right: 20%;
+  }
+
+
+.searchBox img{
+    height: 23px;
+    padding: 10px;
+}
+
+.searchBox input{
+    border: none;
+    margin-right: 10px;
+    width:90%;
+    background-color:#EAEBEB;
+}

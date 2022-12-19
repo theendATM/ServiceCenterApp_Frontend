@@ -11,7 +11,7 @@ const Header=()=>{
       
       <div className='rightPart'>
         <span className="address"> Откуда подгружаем адрес??</span>
-        <div className="searchBox">
+        <div className="searchBoxHeader">
           <img src={search} alt=''></img>
           <input type='text' placeholder='search'></input>
         </div>
