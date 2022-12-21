@@ -1,0 +1,45 @@
+.serviceDetails{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .serviceDetailsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid #D8DADE;
+    border-radius: 8px;
+  }
+
+  .blockHeader{
+    margin-left: 12px;
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+
+  .serviceDetailsBlock span:last-child{
+    margin-bottom: 16px;
+  }
+
+  .serviceDetailsBlock span:nth-child(2),.serviceDetailsBlock span:nth-child(3){
+    margin-left: 20px;
+  }
+  
+  .serviceDetailsBlock .partModel:not(:last-child){
+    border-bottom: 1px solid #E9EAEA;
+    padding-bottom:20px ;
+  }
+
+  .editService{
+    border: 1px solid #64A0B4;
+    color: #64A0B4;
+    width: 122px;
+    height: 39px;
+    background: none;
+    border-radius: 8px;
+    margin-top: 7px;
+  }

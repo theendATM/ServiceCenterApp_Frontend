@@ -1,0 +1,61 @@
+.header{
+  display: flex;
+  padding-top:32px;
+  padding-left: 20%;
+  padding-right: 3.5%;
+  justify-content:space-between;
+}
+
+.but:hover ,.but:focus{
+  color: hsla(194, 64%, 42%, 1);
+  border-width: 2px;
+  border-radius: 8px;
+  border-color:#D3D6D7;
+}
+
+.but{
+  border-width: 0;
+  background: none;
+  padding: 10px, 16px, 10px, 16px;
+  
+}
+
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.rightPart{
+    display: flex;
+    gap:10%;
+    align-items: center;
+    justify-content: right;
+}
+
+.searchBoxHeader{
+    height: 43px;
+    display: flex;
+    align-items: center;
+    width:35%;
+    border-radius: 8px;
+    
+}
+
+.searchBoxHeader img{
+    height: 23px;
+    padding: 10px;
+}
+
+.searchBoxHeader, .searchBoxHeader input{
+    background-color:#EAEBEB;
+}
+
+.searchBoxHeader input{
+    border: none;
+    margin-right: 10px;
+    width:90%;
+}
+
+.searchBoxHeader input:focus {
+    outline: none;
+}

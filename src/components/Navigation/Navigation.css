@@ -1,0 +1,72 @@
+.nav{
+    width: 19.5%;
+    height: 100vh;
+    background-color: #E9EAEA;
+    position: fixed; 
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.act{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.act button{
+    padding:16px 6% ;
+    text-align: left;
+    margin: 0 7%;
+    border: none;
+    background: none;
+    
+}
+
+.act button:hover{
+    color: #268EAF;
+    background-color: hsla(194, 8%, 45%, 0.17);
+    border-radius: 6px;
+    position: relative;
+    float: bottom;
+}
+
+.logo {
+    width: 32%; 
+    border-radius: 100px;
+    margin-top: 26px;
+    margin-left: 12.5%;
+    margin-bottom: 47px;
+    
+}
+
+.userInfo .user{
+    border-radius: 100px;
+    object-fit:cover;
+    width: 18%;
+    
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 21px;
+    margin-left: 6%;
+    gap:4%;
+}
+
+.sign{
+    height: 10px;
+    margin-left: 6%;
+
+}
+
+.log{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+}
