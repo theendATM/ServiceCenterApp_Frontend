@@ -1,0 +1,102 @@
+.addService{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+}
+
+.customerInfo, .serviceInfo, .partInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.addService input{
+    border: none;
+    color: #9499A3;
+    border-bottom: 1px solid #C0D4DA;
+    width: 20%;
+    height: 27px;
+    margin-left: 4%; 
+    margin-bottom: 16px;
+
+}
+
+.fullName{
+    display: flex;
+    flex-direction: row;
+    gap:10%;
+   
+}
+
+.addService span{
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.customerInfo span{
+    margin-top: 0px;
+}
+
+.addService .serviceInfo .serviceDescription {
+    width:70%;
+    border: 1px solid #C0D4DA;
+    height: 132px;
+    text-align: start;
+    color:#9499A3;
+    margin-left: 4%; 
+}
+
+.addService .addAmount{
+    width:10%;
+    margin-left: 10%;
+}
+
+.addLine, .checkAv, .cancelAdding, .saveAdding{
+    height: 39px;
+    border: 1px solid #64A0B4;
+    background: none;
+    color:#64A0B4;
+    border-radius: 8px;
+    margin-left: 4%;
+}
+
+.addLine, .cancelAdding{
+    width: 69px;
+    background: none;
+    color:#64A0B4;
+    margin-bottom: 16px;
+}
+
+.checkAv, .saveAdding{
+    width: 124px;
+    border: 1px solid #64A0B4;
+    background: #64A0B4;
+    color:#F4F5F5;
+}
+
+.cancelAdding{
+    width: 89px;
+}
+
+.saveAdding{
+    width: 75px;
+    margin-left: 0%;
+}
+
+.finalAddButtons{
+    display: flex;
+    gap:21px;
+    margin-top: 100px;
+}
+
+.part span{
+    color:#9499A3;
+    margin-left: 10%;
+}
+
+.part .dataStock{
+    color:#313435;
+    margin-left: 0%;
+
+}

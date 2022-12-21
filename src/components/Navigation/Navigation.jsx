@@ -20,9 +20,9 @@ const Navigation=()=>{
       </div>
       
       <div className='userInfo'>
-        <img className='user' src={user} alt=''></img>
+        <img className='user' src={user} alt='' onClick={()=>navigate('/profile')}></img>
         <div className='log'>
-          <span>Name Surname</span>
+          <span onClick={()=>navigate('/profile')}>Name Surname</span>
           <img className='sign' src={sign} alt=''></img>
         </div>
         

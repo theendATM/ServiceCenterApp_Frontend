@@ -8,9 +8,6 @@
 
   table{
     border-collapse: collapse;
-  }
-
-  th, table{
     border: 1px solid #E1E1E1;
   }
 
@@ -21,6 +18,7 @@
   th{
     background-color: #EFF0F0;
     text-align: center;
+    border: 1px solid #E1E1E1;
   }
 
   td:not(.textCenter){
@@ -53,6 +51,7 @@
     display: flex;
     align-items: center;
     width:40%;
+    border-radius: 8px;
   }
 
   .searchBox select{

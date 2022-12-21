@@ -1,17 +1,17 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
-import Service from "../../components/Service/Service";
+import AddService from "../../components/AddService/AddService";
 
-const ServicesPage = () => {
+const AddServicePage = () => {
 
   return(
     <div>
       <Navigation/> 
       <Header/>
-      <Service/>
+      <AddService/>
     </div>
     
   )
 }
 
-export default ServicesPage;
+export default AddServicePage;

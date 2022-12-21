@@ -1,0 +1,63 @@
+.signInPage .logoAuth img {
+    margin-top: 26px;
+    width: 6%; 
+    border-radius: 100px;
+    margin-left: 2.5%;
+}
+
+.signIn, .userData, .profile{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signIn, .profile{
+    width: 63%;
+    background: #F4F5F5;
+    height: 480px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 29px;
+    gap: 56px;
+}
+.signIn div, .signIn span, .profile div, .profile span{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.signIn span, .profile span{
+    color: #268EAF;
+    margin-top: 74px;
+}
+
+.signIn .userData, .profile .userData{
+    width: 48%;
+    gap:26px;
+}
+
+.signIn .userData input, .profile .userData input{
+    border: none;
+    border-bottom: 1px solid #C0D4DA;
+    height: 27px;
+    background: none;
+}
+
+.signIn button, .profile button{
+    height: 39px;
+    padding: 10px 70px 10px 70px;
+
+    border-radius: 8px;
+}
+
+.signIn button:first-child{
+    border: 1px solid #64A0B4;
+    background: none;
+    color: #64A0B4;
+}
+
+.signIn button:last-child, .profile button:last-child{
+        background-color: #64A0B4;
+        color:#F4F5F5;
+}
