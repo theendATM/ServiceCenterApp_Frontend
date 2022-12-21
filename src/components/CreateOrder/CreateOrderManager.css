@@ -1,0 +1,92 @@
+.createOrder{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+  }
+
+  table{
+    border-collapse: collapse;
+    border: 1px solid #E1E1E1;
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 12px;
+  }
+
+  td{
+    border-right: 1px solid #E1E1E1;
+    padding: 16px 20px;
+  }
+
+  th{
+    background-color: #EFF0F0;
+    text-align: center;
+    border: 1px solid #E1E1E1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td:not(.textCenter){
+    padding-left: 1%;
+  }
+
+
+  .textCenter{
+    text-align: center;
+  }
+
+  .missingName{
+    margin-left: 2%;
+    margin-top: 25px;
+  }
+
+  .createOrder input{
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: none;
+    text-align: center ;
+  }
+
+  .missingItem, .outcomingOrder{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E9EAEA;
+  }
+
+  .no-line{
+    border: none;
+  }
+
+  .outOfStock{
+    margin-left: 4%;
+  }
+
+
+  .createOrder .finalAddButtons{
+    margin-top: 0px;
+  }
+
+  .createOrder .incoming .saveUpdate,  .createOrder .incoming .cancelUpdate{
+    margin-top: 12px;
+  }
+
+  .createOrder .incoming .cancelUpdate{
+    margin-left: 0px;
+  }
+
+  .createOrder .incoming .acceptAll{
+    width: 110px;
+  }
+
+  .outcomingOrder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .orderInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }

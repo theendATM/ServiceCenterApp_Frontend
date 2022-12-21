@@ -2,12 +2,16 @@ import search from '../img/search.svg'
 import './Header.css'
 import { useNavigate} from 'react-router-dom'
 
-const Header=()=>{
+const HeaderOrder=()=>{
   const navigate = useNavigate();
   return(
     <div className='header'>
       <div className='buttons'>
-      <input className='but' type='button' value="Transactions" onClick={()=>navigate('/transactions')}></input>
+      <input className='but' type='button' value="Create order" onClick={()=>navigate('/orders/create')}/>
+      <input className='but' type='button' value="Incoming" onClick={()=>navigate('/orders/incoming')}/>
+      <input className='but' type='button' value="Outcoming" onClick={()=>navigate('/orders/outcoming')}/>
+      <input className='but' type='button' value="Requests" onClick={()=>navigate('/orders/requests')}/>
+
       </div>
       
       <div className='rightPart'>
@@ -22,5 +26,5 @@ const Header=()=>{
     )
 }
 
-export default Header;
+export default HeaderOrder;
 

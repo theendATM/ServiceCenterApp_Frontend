@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
+import Catalogue from "../../components/CatalogueUpdate/CatalogueUpdate";
 import './CataloguePage.css';
 
 const CataloguePage = () => {
@@ -8,7 +9,7 @@ const CataloguePage = () => {
     <div>
       <Navigation/> 
       <Header/>
-      <h2>Catalogue</h2>
+      <Catalogue/>
     </div>
     
   )
