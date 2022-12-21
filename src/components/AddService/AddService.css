@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.addService input{
+.addService input, .catalogueUpdate input{
     border: none;
     color: #9499A3;
     border-bottom: 1px solid #C0D4DA;
@@ -38,13 +38,14 @@
     margin-top: 0px;
 }
 
-.addService .serviceInfo .serviceDescription {
+.addService .serviceInfo .serviceDescription, .catalogueUpdate textarea {
     width:70%;
     border: 1px solid #C0D4DA;
     height: 132px;
     text-align: start;
     color:#9499A3;
     margin-left: 4%; 
+    margin-top: 16px;
 }
 
 .addService .addAmount{
@@ -52,7 +53,7 @@
     margin-left: 10%;
 }
 
-.addLine, .checkAv, .cancelAdding, .saveAdding{
+.addLine, .checkAv, .cancelAdding, .saveAdding, .cancelUpdate, .saveUpdate{
     height: 39px;
     border: 1px solid #64A0B4;
     background: none;
@@ -61,25 +62,25 @@
     margin-left: 4%;
 }
 
-.addLine, .cancelAdding{
+.addLine, .cancelAdding, .cancelUpdate{
     width: 69px;
     background: none;
     color:#64A0B4;
     margin-bottom: 16px;
 }
 
-.checkAv, .saveAdding{
+.checkAv, .saveAdding, .saveUpdate{
     width: 124px;
     border: 1px solid #64A0B4;
     background: #64A0B4;
     color:#F4F5F5;
 }
 
-.cancelAdding{
+.cancelAdding, .cancelUpdate{
     width: 89px;
 }
 
-.saveAdding{
+.saveAdding, .saveUpdate{
     width: 75px;
     margin-left: 0%;
 }

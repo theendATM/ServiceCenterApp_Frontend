@@ -1,11 +1,19 @@
 import './Navigation.css'
 import user from '../img/def_user.png'
 import sign from '../img/show_details_sign.svg'
-import { useNavigate } from 'react-router-dom'
+import GetRole from '../../functions/GetRole'
+import { useNavigate} from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Navigation=()=>{
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+    let usersOption = document.querySelector('#usersOption');	
+    (GetRole()!=='MainManager')?
+    usersOption.classList.add('hidden'):usersOption.classList.remove('hidden');
+  });
 
   return(
     <div className='nav'>
@@ -13,9 +21,10 @@ const Navigation=()=>{
         <img className='logo' src={user} alt='' onClick={()=>navigate('/')}></img>
         <div className='act'>
           <button onClick={()=>navigate('/services')}>Services</button>
-          <button onClick={()=>navigate('/warehouse')}>Local warehouse</button>
-          <button onClick={()=>navigate('/catalogue')}>Catalogue</button>
-          <button onClick={()=>navigate('/orders')}>Orders</button>
+          <button onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
+          <button onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
+          <button onClick={()=>navigate('/orders/create')}>Orders</button>
+          <button id='usersOption' onClick={()=>navigate('/users')}>Users</button>
         </div>
       </div>
       

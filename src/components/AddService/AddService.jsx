@@ -1,8 +1,17 @@
 import './AddService.css'
 import { useNavigate } from 'react-router-dom'
+import GetRole from '../../functions/GetRole';
+import { useEffect } from 'react';
+import Header from "../../components/Header/Header";
 
 const AddService=()=>{
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    if(GetRole()==='MainManagerr')
+        return(
+            <h2>Access denied</h2>
+        )
+        
+
 
     return(
         <div className='addService'>
@@ -42,7 +51,7 @@ const AddService=()=>{
                     <span>In stock: </span>
                     <span className='dataStock'>?</span>
                 </div>
-                <button className='addLine'>Add</button>
+                <button className='addLine'>Add</button> 
                 
             </div>
             <button className='checkAv'>Check availability</button>

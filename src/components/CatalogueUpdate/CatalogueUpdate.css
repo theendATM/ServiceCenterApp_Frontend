@@ -1,0 +1,23 @@
+.catalogueUpdate{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+}
+
+.catalogueUpdate input, .catalogueUpdate textarea{
+    margin-left: 0%; 
+
+}
+
+.catalogueUpdate .finalAddButtons{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.cancelUpdate, .saveUpdate{
+    margin-left: 0px;
+    margin-top: 36px;
+}
+

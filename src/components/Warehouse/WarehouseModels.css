@@ -83,3 +83,7 @@
     width:90%;
     background-color:#EAEBEB;
 }
+
+.hidden{
+  display: none;
+}

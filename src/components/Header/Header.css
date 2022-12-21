@@ -17,6 +17,7 @@
   border-width: 0;
   background: none;
   padding: 10px, 16px, 10px, 16px;
+  margin-left: 10%;
   
 }
 
@@ -54,8 +55,4 @@
     border: none;
     margin-right: 10px;
     width:90%;
-}
-
-.searchBoxHeader input:focus {
-    outline: none;
 }

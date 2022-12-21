@@ -1,17 +1,17 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
-import './OrdersPage.css';
+import ServiceTransactions from "../../components/Service/ServiceTransactions";
 
-const OrdersPage = () => {
+const ServiceTransactionsPage = () => {
 
   return(
     <div>
       <Navigation/> 
       <Header/>
-      <h2>Orders</h2>
+      <ServiceTransactions/>
     </div>
     
   )
 }
 
-export default OrdersPage;
+export default ServiceTransactionsPage;
