@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ServiceCenterApp_Frontend/static/css/main.039425ef.css",
-    "main.js": "/ServiceCenterApp_Frontend/static/js/main.eaf5aaa3.js",
+    "main.js": "/ServiceCenterApp_Frontend/static/js/main.d1495d58.js",
     "static/js/787.2aac56ad.chunk.js": "/ServiceCenterApp_Frontend/static/js/787.2aac56ad.chunk.js",
     "static/media/def_user.png": "/ServiceCenterApp_Frontend/static/media/def_user.bd7b35f7a82c126ee7d4.png",
     "index.html": "/ServiceCenterApp_Frontend/index.html",
     "static/media/search.svg": "/ServiceCenterApp_Frontend/static/media/search.00290972d419aad4cdc958b2647114ab.svg",
     "static/media/show_details_sign.svg": "/ServiceCenterApp_Frontend/static/media/show_details_sign.2c5c947fff5b8eccf1a6a63900beb6ee.svg",
     "main.039425ef.css.map": "/ServiceCenterApp_Frontend/static/css/main.039425ef.css.map",
-    "main.eaf5aaa3.js.map": "/ServiceCenterApp_Frontend/static/js/main.eaf5aaa3.js.map",
+    "main.d1495d58.js.map": "/ServiceCenterApp_Frontend/static/js/main.d1495d58.js.map",
     "787.2aac56ad.chunk.js.map": "/ServiceCenterApp_Frontend/static/js/787.2aac56ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.039425ef.css",
-    "static/js/main.eaf5aaa3.js"
+    "static/js/main.d1495d58.js"
   ]
 }
