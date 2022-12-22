@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
-import ServiceDetails from "../../components/ServiceDetails/ServiceDetails";
+import Users from "../../components/Users/Users";
 
 const UsersPage=()=>{
 
@@ -9,7 +9,7 @@ const UsersPage=()=>{
             
             <Navigation/>
             <Header/>
-            <h2>Users page</h2>
+            <Users/>
 
         </div>
     )
