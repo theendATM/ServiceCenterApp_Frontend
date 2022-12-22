@@ -1,0 +1,11 @@
+.usersList{
+    display: flex;
+    padding-top:32px;
+    padding-left: 24%;
+    padding-right: 3.5%;
+    flex-direction: column;
+  }
+
+  .tableButtons, .cancelUpdate{
+    margin-top: 0px;
+  }
