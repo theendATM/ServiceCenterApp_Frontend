@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import Warehouse from "../../components/Warehouse/WarehouseModels";
 import './WarehouseModelsPage.css';
+import GetRole from "../../functions/GetRole";
 
 const WarehouseModelsPage = () => {
 
@@ -9,7 +10,10 @@ const WarehouseModelsPage = () => {
     <div>
       <Navigation/> 
       <Header/>
-      <Warehouse/>
+      {(GetRole()==='Manager' || GetRole()==='MainManager' || GetRole()==='Engineer')?
+            <Warehouse/>:<h2>Access denied!</h2>
+  }
+      
     </div>
     
   )

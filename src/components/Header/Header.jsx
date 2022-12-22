@@ -12,6 +12,18 @@ const Header=()=>{
     options.forEach(option => {
       (GetRole()==='MainManager')?
     option.classList.add('hidden'):option.classList.remove('hidden');
+
+    var a =window.location.href;
+    let button='';
+    let rem = document.querySelector('.hideForMM');
+    rem.classList.remove('highlight');
+
+
+    if(a.includes('transactions'))
+      button = document.querySelector('.hideForMM');
+    if(button!=='')
+      button.classList.add('highlight') ;
+ 
     });
     
   });

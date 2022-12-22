@@ -59,3 +59,9 @@
 .hidden{
   display: none;
 }
+
+.highlight{
+  border: 2px solid #D3D6D7;
+  border-radius: 8px;
+  color: #268EAF;
+}

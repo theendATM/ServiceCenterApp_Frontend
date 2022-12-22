@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import UserAdd from "../../components/Users/UserAdd";
+import GetRole from "../../functions/GetRole";
 
 const AddUserPage=()=>{
 
@@ -9,7 +10,10 @@ const AddUserPage=()=>{
             
             <Navigation/>
             <Header/>
-            <UserAdd/>
+            {(GetRole()==='MainManager')?
+            <UserAdd/>:<h2>Access denied!</h2>
+  }
+            
 
         </div>
     )

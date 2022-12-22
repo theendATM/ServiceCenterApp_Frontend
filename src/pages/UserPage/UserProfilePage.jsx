@@ -1,12 +1,16 @@
 import './UserProfilePage.css';
 import user from '../../components/img/def_user.png'
 import { useNavigate } from 'react-router-dom'
+import GetRole from '../../functions/GetRole';
 
 const UserProfilePage=() =>{ 
 
     const navigate = useNavigate();
     return (
-      <div className='signInPage'>
+       <div>
+        {(GetRole()==='Manager' || GetRole()==='MainManager' || GetRole()==='Engineer')?
+            
+     <div className='signInPage'>
         <div className='logoAuth'>
             <img src={user} alt='' onClick={()=>navigate('/')}></img>
         </div>
@@ -30,6 +34,9 @@ const UserProfilePage=() =>{
 
 
       </div>
+      :<h2>Access denied!</h2>}  
+       </div> 
+      
     )
 }
 
