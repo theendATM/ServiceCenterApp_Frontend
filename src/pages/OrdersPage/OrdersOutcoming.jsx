@@ -1,13 +1,15 @@
 import Navigation from "../../components/Navigation/Navigation";
 import HeaderOrder from "../../components/Header/HeaderOrder";
-import OrderOutcoming from "../../components/Orders/OrderOutcoming";
+import OrderOutcomingManager from "../../components/Orders/OrderOutcomingManager";
 import GetRole from "../../functions/GetRole";
 const OrdersOutcomingPage = () => {
     return(
         <div>
           <Navigation/> 
           <HeaderOrder/>
-          {(GetRole()==='MainManager')? <OrderOutcoming/>:<h2>Access denied</h2>}   
+          {(GetRole()==='MainManager')&& //change into 'Manager' when GetRole works
+        <OrderOutcomingManager/>
+      }
           
         </div>)
 }
