@@ -14,6 +14,7 @@ import ServiceTransactionsPage from './pages/ServicesPage/ServiceTransactionsPag
 import OrdersIncomingPage from './pages/OrdersPage/OrdersIncomingPage';
 import OrdersOutcomingPage from './pages/OrdersPage/OrdersOutcoming';
 import OrdersRequestsPage from './pages/OrdersPage/OrdersRequestsPage';
+import UsersPage from './pages/UsersPage/UsersPage';
 
 const App=() =>{ 
   return (
@@ -34,6 +35,7 @@ const App=() =>{
       <Route path='/register' element={<RegisterPage />} />
       <Route path='/profile' element={<UserProfilePage />} />
       <Route path='/transactions' element={<ServiceTransactionsPage />} />
+      <Route path='/users' element={<UsersPage />} />
 
     </Routes>
   </BrowserRouter>
