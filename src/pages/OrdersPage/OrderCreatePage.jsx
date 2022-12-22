@@ -12,8 +12,7 @@ const OrderActionsPage = () => {
     <div>
       <Navigation/> 
       <HeaderOrder/>
-      <CreateOrderManager/>
-        <Header/> && <CreateOrderMainManager/>          
+      <CreateOrderManager/>         
     </div>
     
   )

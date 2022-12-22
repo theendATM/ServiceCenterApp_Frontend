@@ -12,9 +12,12 @@ const Navigation=()=>{
   const navigate = useNavigate();
 
   useEffect(()=>{
-    let usersOption = document.querySelector('#usersOption');	
-    (GetRole()!=='MainManager')?
-    usersOption.classList.add('hidden'):usersOption.classList.remove('hidden');
+    let usersOptions = document.querySelectorAll('.usersOption');	
+    usersOptions.forEach(o => {
+      (GetRole()!=='MainManager')?
+    o.classList.add('hidden'):o.classList.remove('hidden');
+    });
+  
 
     var a =window.location.href;
     let button='';
@@ -45,9 +48,9 @@ const Navigation=()=>{
         <div className='act'>
           <button className='serviceNavButton navButton' onClick={()=>navigate('/services')}>Services</button>
           <button className='warehouseNavButton navButton' onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
-          <button className='catalogueNavButton navButton' onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
+          <button className='catalogueNavButton navButton usersOption' onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
           <button className='orderNavButton navButton' onClick={()=>navigate('/orders/create')}>Orders</button>
-          <button className='userNavButton navButton' id='usersOption' onClick={()=>navigate('/users')}>Users</button>
+          <button className='userNavButton navButton usersOption' id='usersOption' onClick={()=>navigate('/users')}>Users</button>
         </div>
       </div>
       

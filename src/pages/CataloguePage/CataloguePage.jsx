@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import Catalogue from "../../components/CatalogueUpdate/CatalogueUpdate";
+import GetRole from "../../functions/GetRole";
 import './CataloguePage.css';
 
 const CataloguePage = () => {
@@ -9,7 +10,10 @@ const CataloguePage = () => {
     <div>
       <Navigation/> 
       <Header/>
-      <Catalogue/>
+      {(GetRole()==='MainManager')?
+            <Catalogue/>:<h2>Access denied!</h2>
+  }
+    
     </div>
     
   )
