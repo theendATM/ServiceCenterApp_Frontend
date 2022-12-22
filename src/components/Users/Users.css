@@ -4,4 +4,59 @@
     padding-left: 24%;
     padding-right: 3.5%;
     flex-direction: column;
+    gap:11px;
+  }
+
+  .managerUserButton, .managerUserButtons{
+    margin-top: 0px;
+  }
+
+  .managerUserButton{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  .userListPanel{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addUser{
+    margin-top: 0px;
+    width: 69px;
+  }
+
+  .chooseRole{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+  }
+
+  .chooseRole input{
+    margin: 0px;
+    height: auto;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .usersManage>span, .usersManage>span{
+    margin-bottom: 12px;
+    margin-top: 44px;
+  }
+
+  .usersManage>select{
+    background-color: none;
+    border:none;
+    color: #9EA3AE;
+    margin-right: 8px;
+    width: 200px;
+    height: 36px;
+    margin-left: 4%;
+    border-bottom: 1px solid #C0D4DA;
+  }
+
+  .usersManage .userEditButton{
+    margin-left: 0px;
   }
