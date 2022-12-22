@@ -6,19 +6,20 @@ import fetchPartModelsForWarehouse from '../../functions/FetchPartModels'
 
 
 const Warehouse=()=>{
-    const [partModels, setPartModels] = useState([]);
+    const [partModels, setPartModels] = useState();
 
     const getParts = async () => 
     {
         try
         {
+            console.log(partModels);
             const result = await fetchPartModelsForWarehouse();
 
             setPartModels(result);
         }
         catch
         {
-
+            
         }
     }
 
@@ -69,13 +70,13 @@ const Warehouse=()=>{
             </thead>
             
             <tbody>
-                {partModels.map((part) => 
+                {partModels ? partModels.map((part) => 
                 <tr key={part.id}>
                     <th>{part.name}</th>
                     <th>{part.description}</th>
                     <th>{part.manufacturer}</th>
                     <th>{part.quantity}</th>
-                </tr>)}
+                </tr>) : <tr></tr>}
             </tbody>
             
         </table>
