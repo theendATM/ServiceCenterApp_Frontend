@@ -1,10 +1,9 @@
+import { axios } from "axios";
+
 const GetRole=()=>
 {   
-    //GetCookie
-    //Doing smth with Cookie
-    var Role='MainManager'; //'Function result' //just my test;
-    //return the string role
-    return(Role);
+    const role="MainManager"
+    return(role);
 }
 
 export default GetRole;
