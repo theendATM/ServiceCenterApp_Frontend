@@ -2,13 +2,24 @@ import './UserProfilePage.css';
 import user from '../../components/img/def_user.png'
 import { useNavigate } from 'react-router-dom'
 import GetRole from '../../functions/GetRole';
+import { useEffect, useState } from "react";
 
 const UserProfilePage=() =>{ 
+    const [role, setRole] = useState();
 
+    useEffect(() => {
+        const getRole = async () => 
+        {
+          const value = await GetRole();
+          setRole(value);
+        }
+    
+        getRole();
+      }, [role]);
     const navigate = useNavigate();
     return (
        <div>
-        {(GetRole()==='Manager' || GetRole()==='MainManager' || GetRole()==='Engineer')?
+        {(role==='Manager' || role==='MainManager' || role==='Engineer')?
             
      <div className='signInPage'>
         <div className='logoAuth'>

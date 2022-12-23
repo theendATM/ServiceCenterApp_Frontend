@@ -10,7 +10,6 @@ const SignInPage = () => {
 
   const navigate=useNavigate()
 
-
   const logIn = async () => {
     if (!password || !login) return;
 

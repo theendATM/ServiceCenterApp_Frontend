@@ -3,11 +3,23 @@ import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
 import CreateOrderManager from "../../components/CreateOrder/CreateOrderManager";
 import CreateOrderMainManager from "../../components/CreateOrder/CreateOrderMainManager";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import GetRole from "../../functions/GetRole";
 
 const OrderActionsPage = () => {
-  if(GetRole()==='Manager')
+  const [role, setRole] = useState();
+
+    useEffect(() => {
+        const getRole = async () => 
+        {
+          const value = await GetRole();
+          setRole(value);
+        }
+    
+        getRole();
+      }, [role]);
+  if(role==='Manager')
   return(
     <div>
       <Navigation/> 
@@ -16,7 +28,7 @@ const OrderActionsPage = () => {
     </div>
     
   )
-  else if(GetRole()==='MainManager')
+  else if(role==='MainManager')
   return(
     <div>
       <Navigation/> 
