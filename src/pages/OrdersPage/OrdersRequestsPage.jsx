@@ -7,8 +7,8 @@ const OrdersRequestsPage = () => {
         <div>
           <Navigation/> 
           <HeaderOrder/>
-          {(GetRole()==='MainManager')&& //change into 'Manager' when GetRole works
-        <OrderRequestManager/>
+          {(GetRole()==='Manager')? //change into 'Manager' when GetRole works
+        <OrderRequestManager/>:<h2>Access denied!</h2>
       }
               
           

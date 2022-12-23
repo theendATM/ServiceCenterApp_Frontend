@@ -1,9 +1,9 @@
 import Header from "../../components/Header/Header";
 import Navigation from "../../components/Navigation/Navigation";
-import Users from "../../components/Users/Users";
+import UserAdd from "../../components/Users/UserAdd";
 import GetRole from "../../functions/GetRole";
 
-const UsersPage=()=>{
+const AddUserPage=()=>{
 
     return(
         <div>
@@ -11,7 +11,7 @@ const UsersPage=()=>{
             <Navigation/>
             <Header/>
             {(GetRole()==='MainManager')?
-            <Users/>:<h2>Access denied!</h2>
+            <UserAdd/>:<h2>Access denied!</h2>
   }
             
 
@@ -19,4 +19,4 @@ const UsersPage=()=>{
     )
 }
 
-export default UsersPage;
+export default AddUserPage;

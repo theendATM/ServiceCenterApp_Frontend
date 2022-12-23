@@ -7,12 +7,38 @@ import { useEffect } from 'react'
 
 const Navigation=()=>{
 
+ 
+
   const navigate = useNavigate();
 
   useEffect(()=>{
-    let usersOption = document.querySelector('#usersOption');	
-    (GetRole()!=='MainManager')?
-    usersOption.classList.add('hidden'):usersOption.classList.remove('hidden');
+    let usersOptions = document.querySelectorAll('.usersOption');	
+    usersOptions.forEach(o => {
+      (GetRole()!=='MainManager')?
+    o.classList.add('hidden'):o.classList.remove('hidden');
+    });
+  
+
+    var a =window.location.href;
+    let button='';
+    let buttons = document.querySelectorAll('.navButton');
+      buttons.forEach(b => {
+      b.classList.remove('highlight');
+    });
+
+    if(a.includes('warehouse'))
+      button = document.querySelector('.warehouseNavButton');
+    else if(a.includes('service'))
+      button = document.querySelector('.serviceNavButton');
+    else if(a.includes('catalogue'))
+      button = document.querySelector('.catalogueNavButton');
+    else if(a.includes('order'))
+      button = document.querySelector('.orderNavButton');
+    else if(a.includes('user'))
+      button = document.querySelector('.userNavButton');
+    if(button!=='')
+      button.classList.add('highlight') ;
+ 
   });
 
   return(
@@ -20,11 +46,11 @@ const Navigation=()=>{
       <div>
         <img className='logo' src={user} alt='' onClick={()=>navigate('/')}></img>
         <div className='act'>
-          <button onClick={()=>navigate('/services')}>Services</button>
-          <button onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
-          <button onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
-          <button onClick={()=>navigate('/orders/create')}>Orders</button>
-          <button id='usersOption' onClick={()=>navigate('/users')}>Users</button>
+          <button className='serviceNavButton navButton' onClick={()=>navigate('/services')}>Services</button>
+          <button className='warehouseNavButton navButton' onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
+          <button className='catalogueNavButton navButton usersOption' onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
+          <button className='orderNavButton navButton' onClick={()=>navigate('/orders/create')}>Orders</button>
+          <button className='userNavButton navButton usersOption' id='usersOption' onClick={()=>navigate('/users')}>Users</button>
         </div>
       </div>
       

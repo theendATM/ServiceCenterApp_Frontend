@@ -9,17 +9,20 @@ import ServiceDetailsPage from './pages/ServicesPage/ServiceDetailsPage';
 import SignInPage from './pages/Authorization/SignInPage';
 import RegisterPage from './pages/Authorization/RegisterPage';
 import UserProfilePage from './pages/UserPage/UserProfilePage';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import ServiceTransactionsPage from './pages/ServicesPage/ServiceTransactionsPage';
 import OrdersIncomingPage from './pages/OrdersPage/OrdersIncomingPage';
 import OrdersOutcomingPage from './pages/OrdersPage/OrdersOutcoming';
 import OrdersRequestsPage from './pages/OrdersPage/OrdersRequestsPage';
 import UsersPage from './pages/UsersPage/UsersPage';
+import EditUserPage from './pages/UsersPage/EditUserPage';
+import AddUserPage from './pages/UsersPage/AddUserPage';
+import { HashRouter } from 'react-router-dom';
 
 const App=() =>{ 
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
     <Routes>
       <Route path='/' element={<MainPage />} />
       <Route path='/warehouse' element={<WarehouseModelsPage />} />
@@ -36,9 +39,11 @@ const App=() =>{
       <Route path='/profile' element={<UserProfilePage />} />
       <Route path='/transactions' element={<ServiceTransactionsPage />} />
       <Route path='/users' element={<UsersPage />} />
+      <Route path='/user/edit' element={<EditUserPage />} />
+      <Route path='/user/add' element={<AddUserPage />} />
 
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
     </div>
     
   );
