@@ -10,20 +10,21 @@ const SignInPage = () => {
 
   const navigate=useNavigate()
 
-  const logIn = async ({loginUsername, loginPassword}) => {
-    if (!loginUsername || !loginPassword) return;
+
+  const logIn = async () => {
+    if (!password || !login) return;
 
     try {
-      await axios({
+      const result = await axios({
         method: "post",
         url: "https://localhost:7226/auth/token",
         data: {
-          Username: loginUsername,
-          Password: loginPassword,
+          Username: login,
+          Password: password,
         },
         withCredentials: true,
       });
-
+      localStorage.setItem("token", result);
       navigate("/")
     } catch {
       alert("wrong");

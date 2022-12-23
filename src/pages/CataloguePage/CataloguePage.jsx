@@ -10,9 +10,9 @@ const CataloguePage = () => {
     <div>
       <Navigation/> 
       <Header/>
-      {(GetRole()==='MainManager')?
+      {(GetRole()!=='MainManager')?
             <Catalogue/>:<h2>Access denied!</h2>
-  }
+      }
     
     </div>
     
