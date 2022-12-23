@@ -43,7 +43,7 @@ const HeaderOrder=()=>{
       </div>
       
       <div className='rightPart'>
-        <span className="address"> Откуда подгружаем адрес??</span>
+        <span className="address"> Котовского, 52</span>
         <div className="searchBoxHeader">
           <img src={search} alt=''></img>
           <input type='text' placeholder='search'></input>

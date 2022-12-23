@@ -35,7 +35,7 @@ const Header=()=>{
       </div>
       
       <div className='rightPart'>
-        <span className="address hideForMM"> Откуда подгружаем адрес??</span>
+        <span className="address hideForMM"> Котовского, 52</span>
         <div className="searchBoxHeader">
           <img src={search} alt=''></img>
           <input type='text' placeholder='search'></input>
