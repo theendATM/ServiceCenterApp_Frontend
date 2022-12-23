@@ -1,11 +1,11 @@
 import axios from "axios"
 
-const fetchPartModelsForWarehouse = async () => {
+const fetchMissingPartModels = async () => {
     try
     {
         const result = await axios({
             method: "get",
-            url: "https://localhost:7226/partmodels/current",
+            url: "https://localhost:7226/partmodel/getmissing",
             withCredentials: 'include'
         })
         
@@ -25,4 +25,4 @@ const fetchPartModelsForWarehouse = async () => {
     }
 }
 
-export default fetchPartModelsForWarehouse;
+export default fetchMissingPartModels;
