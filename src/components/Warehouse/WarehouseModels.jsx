@@ -1,8 +1,31 @@
+import { useState, useEffect} from 'react'
 import search from '../img/search.svg'
 import details from '../img/show_details_sign.svg'
 import './WarehouseModels.css'
-const Warehouse=()=>{
+import fetchPartModelsForWarehouse from '../../functions/FetchPartModels'
 
+
+const Warehouse=()=>{
+    const [partModels, setPartModels] = useState();
+
+    const getParts = async () => 
+    {
+        try
+        {
+            console.log(partModels);
+            const result = await fetchPartModelsForWarehouse();
+
+            setPartModels(result);
+        }
+        catch
+        {
+            
+        }
+    }
+
+    useEffect(() => {
+        getParts();
+      }, []);
 
     return(
     <div className='warehouseModels'>
@@ -47,12 +70,13 @@ const Warehouse=()=>{
             </thead>
             
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td className='textCenter'>4</td>
-                </tr>
+                {partModels ? partModels.map((part) => 
+                <tr key={part.id}>
+                    <th>{part.name}</th>
+                    <th>{part.description}</th>
+                    <th>{part.manufacturer}</th>
+                    <th>{part.quantity}</th>
+                </tr>) : <tr></tr>}
             </tbody>
             
         </table>
