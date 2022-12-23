@@ -7,26 +7,24 @@ const UserAdd=()=>{
     return(
         <div className='catalogueUpdate usersManage'>
             <span>User</span>
-            <input type='text' placeholder='Name'></input>
-            <input type='text' placeholder='Email'></input>
+            <select>
+                <option defaultValue="true" disabled="disabled" selected> User</option>
+                <option> Get user</option>
+            </select>
             <span>Permissions</span>
             <div className='chooseRole'>
                 <label>
-                    <input type='checkbox'></input>
+                    <input type='radio'></input>
                     <span>Engineer</span>
                 </label>
                 <label>
-                    <input type='checkbox'></input>
+                    <input type='radio' ></input>
                     <span>Manager</span>
-                </label>
-                <label>
-                    <input type='checkbox'></input>
-                    <span>Main manager</span>
                 </label>
             </div>
             <span>Place</span>
             <select>
-                <option defaultValue="true" disabled="disabled"> Warehouse</option>
+                <option defaultValue="true" disabled="disabled" selected> Warehouse</option>
                 <option> Get options</option>
             </select>
 
