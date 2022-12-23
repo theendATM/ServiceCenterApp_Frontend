@@ -9,6 +9,7 @@ const GetRole = async () => {
       withCredentials: true,
     });
 
+    console.log(results.data[0])
     if (results.data.length > 0) return results.data[0];
     else return null;
   } catch {return null}
