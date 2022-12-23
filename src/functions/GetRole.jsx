@@ -4,7 +4,7 @@ const GetRole = async () => {
   try {
     var results = await axios({
       method: "get",
-      url: "https://localhost:7226/auth/roles",
+      url: "https://localhost:7226/user/roles",
 
       withCredentials: true,
     });
