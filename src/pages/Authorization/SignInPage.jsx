@@ -10,7 +10,7 @@ const SignInPage = () => {
 
   const navigate=useNavigate()
 
-  const logIn = async () => {
+  const logIn = async ({loginUsername, loginPassword}) => {
     if (!password || !login) return;
 
     try {
@@ -18,8 +18,8 @@ const SignInPage = () => {
         method: "post",
         url: "https://localhost:7226/auth/token",
         data: {
-          Username: login,
-          Password: password,
+          Username: loginUsername,
+          Password: loginPassword,
         },
         withCredentials: true,
       });
