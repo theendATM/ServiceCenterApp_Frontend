@@ -48,6 +48,7 @@ const Navigation=()=>{
         <div className='act'>
           <button className='serviceNavButton navButton' onClick={()=>navigate('/services')}>Services</button>
           <button className='warehouseNavButton navButton' onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
+          <button className='usersNavButton navButton' onClick={()=>navigate('/users')}>Users</button>
           <button className='catalogueNavButton navButton usersOption' onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
           <button className='orderNavButton navButton' onClick={()=>navigate('/orders/create')}>Orders</button>
           <button className='userNavButton navButton usersOption' id='usersOption' onClick={()=>navigate('/users')}>Users</button>

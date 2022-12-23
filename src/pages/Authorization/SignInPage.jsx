@@ -11,7 +11,7 @@ const SignInPage = () => {
   const navigate=useNavigate()
 
   const logIn = async ({loginUsername, loginPassword}) => {
-    if (!password || !login) return;
+    if (!loginUsername || !loginPassword) return;
 
     try {
       await axios({
@@ -48,7 +48,7 @@ const SignInPage = () => {
         </div>
         <div className="buttons">
           <button onClick={() => navigate("/register")}>Register</button>
-          <button onClick={logIn}>Sign in</button>
+          <button onClick={()=>logIn(login, password)}>Sign in</button>
         </div>
       </div>
     </div>
