@@ -5,6 +5,8 @@ import './Service.css'
 import GetRole from '../../functions/GetRole'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
+import fetchServices from '../../functions/FetchServices'
+import { useState } from 'react'
 
 const Service=()=>{
 
@@ -14,6 +16,24 @@ const Service=()=>{
         addButton.classList.add('hidden'):addButton.classList.remove('hidden');
     });
 
+    const [services, setServices] = useState();
+    const getServices = async () => 
+    {
+        try
+        {
+            const result = await fetchServices();
+
+            setServices(result);
+        }
+        catch
+        {
+            
+        }
+    }
+
+    useEffect(() => {
+        getServices();
+      }, []);
     
 
 
@@ -56,20 +76,19 @@ const Service=()=>{
                 <th>Number</th>
                 <th>Description</th>
                 <th>Client info</th>
-                <th>Start date <img src={details} alt=''/></th>
                 <th>Status <img src={details} alt=''/></th>
             </tr>
             </thead>
             <tbody>
-                <tr onClick={()=>navigate('/services/details')}>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td className='textCenter'>4</td>
+                {services ? services.map((part) => 
+                <tr onClick={()=>navigate('/services/details')} key={part.id}>
+                    <td>{part.id} </td>
+                    <td>{part.notes}</td>
+                    <td>{part.name} : {part.phone} </td>
                     <td className='textCenter'>
-                        5
+                    {part.servicestatus}
                     </td>
-                </tr>
+                </tr>) : <tr></tr>}
             </tbody>
             
         </table>
