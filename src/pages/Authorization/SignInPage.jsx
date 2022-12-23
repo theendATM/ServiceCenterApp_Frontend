@@ -23,7 +23,7 @@ const SignInPage = () => {
         },
         withCredentials: true,
       });
-      localStorage.setItem("token", result);
+      localStorage.setItem("secret-token", result);
       navigate("/")
     } catch {
       alert("wrong");
