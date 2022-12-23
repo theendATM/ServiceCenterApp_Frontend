@@ -5,7 +5,7 @@ const fetchServices = async () => {
     {
         const result = await axios({
             method: "get",
-            url: "https://localhost:7226//history",
+            url: "https://localhost:7226/service/history",
             withCredentials: 'include'
         })
         
