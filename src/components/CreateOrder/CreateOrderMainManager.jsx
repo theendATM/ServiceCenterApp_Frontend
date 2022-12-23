@@ -1,9 +1,32 @@
+import { useEffect, useState } from 'react';
 import './CreateOrderManager.css'
+import fetchMissingPartModels from '../../functions/FetchMissingParts';
 
 const CreateOrderMainManager=()=>{
+    const[missingParts, setMissningParts] = useState();
+
+    
+    const getMissingParts = async () => 
+    {
+        try
+        {
+            const partList = await fetchMissingPartModels();
+
+            setMissningParts(partList);
+        }
+        catch
+        {
+
+        }
+    }
+
+    useEffect(() => 
+    { 
+         getMissingParts();
+    }, [])
 
     return(
-        <div className="createOrder">
+        <form className="createOrder">
             <div className='missingItem'>
                  <span className='orderAct'>MissingName</span>
                  <br></br>
@@ -12,16 +35,19 @@ const CreateOrderMainManager=()=>{
                     <thead>
                         <tr>
                         <th>Name</th>
-                        <th>Requested</th>
-                        <th>Warehouse</th>
+                        <th>Quantity</th>
                     </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>GetName</td>
-                            <td className='textCenter'>GetAmount</td>
-                            <td className='textCenter'>GetWarehouse</td>
-                        </tr>
+                            {
+                                missingParts ? 
+                                missingParts.map((part) => 
+                                <tr key={part.id}>
+                                    <th>{part.name}</th>
+                                    <th>{part.quantity}</th>
+                                </tr>) 
+                                : <tr></tr>
+                            }
                     </tbody>
                 </table>
             </div>
@@ -29,10 +55,10 @@ const CreateOrderMainManager=()=>{
             
             <div className='finalAddButtons incoming'>
                 <button className='cancelUpdate'>Reject</button>
-                <button className='saveUpdate acceptAll'>Create order</button>
+                <button className='saveUpdate acceptAll' type='submit'>Create order</button>
             </div>
             
-        </div>
+        </form>
 
 
     )

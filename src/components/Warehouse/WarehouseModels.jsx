@@ -12,7 +12,6 @@ const Warehouse=()=>{
     {
         try
         {
-            console.log(partModels);
             const result = await fetchPartModelsForWarehouse();
 
             setPartModels(result);
