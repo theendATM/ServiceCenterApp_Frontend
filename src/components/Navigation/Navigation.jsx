@@ -56,19 +56,19 @@ const Navigation=()=>{
       <div>
         <img className='logo' src={user} alt='' onClick={()=>navigate('/')}></img>
         <div className='act'>
-          <button className='serviceNavButton navButton' onClick={()=>handleRedirect('/services')}>Services</button>
-          <button className='warehouseNavButton navButton' onClick={()=>handleRedirect('/warehouse')}>Local Warehouse</button>
-          <button className='usersNavButton navButton' onClick={()=>handleRedirect('/users')}>Users</button>
-          <button className='catalogueNavButton navButton usersOption' onClick={()=>handleRedirect('/catalogue')}>Catalogue Update</button>
-          <button className='orderNavButton navButton' onClick={()=>handleRedirect('/orders/create')}>Orders</button>
-          <button className='userNavButton navButton usersOption' id='usersOption' onClick={()=>handleRedirect('/users')}>Users</button>
+          <button className='serviceNavButton navButton' onClick={()=>navigate('/services')}>Services</button>
+          <button className='warehouseNavButton navButton' onClick={()=>navigate('/warehouse')}>Local Warehouse</button>
+          <button className='usersNavButton navButton' onClick={()=>navigate('/users')}>Users</button>
+          <button className='catalogueNavButton navButton usersOption' onClick={()=>navigate('/catalogue')}>Catalogue Update</button>
+          <button className='orderNavButton navButton' onClick={()=>navigate('/orders/create')}>Orders</button>
+          <button className='userNavButton navButton usersOption' id='usersOption' onClick={()=>navigate('/users')}>Users</button>
         </div>
       </div>
       
       <div className='userInfo'>
-        <img className='user' src={user} alt='' onClick={()=>handleRedirect('/profile')}></img>
+        <img className='user' src={user} alt='' onClick={()=>navigate('/profile')}></img>
         <div className='log'>
-          <span onClick={()=>handleRedirect('/profile')}>Name Surname</span>
+          <span onClick={()=>navigate('/profile')}>Name Surname</span>
           <img className='sign' src={sign} alt=''></img>
         </div>
         
