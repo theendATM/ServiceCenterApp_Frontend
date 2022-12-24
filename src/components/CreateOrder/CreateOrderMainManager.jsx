@@ -30,7 +30,7 @@ const CreateOrderMainManager=()=>{
             <div className='missingItem'>
                  <span className='orderAct'>Tyumen warehouse</span>
                  <br></br>
-                 <span className='orderAct'>Total: Getamount</span>
+                 
                 <table>
                     <thead>
                         <tr>
