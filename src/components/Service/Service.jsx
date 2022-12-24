@@ -86,7 +86,7 @@ const Service=()=>{
                     <td>{part.notes}</td>
                     <td>{part.name} : {part.phone} </td>
                     <td className='textCenter'>
-                    {part.servicestatus}
+                    {part.serviceStatus}
                     </td>
                 </tr>) : <tr></tr>}
             </tbody>
