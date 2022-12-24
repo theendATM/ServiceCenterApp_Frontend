@@ -28,7 +28,7 @@ const CreateOrderMainManager=()=>{
     return(
         <form className="createOrder">
             <div className='missingItem'>
-                 <span className='orderAct'>MissingName</span>
+                 <span className='orderAct'>Tyumen warehouse</span>
                  <br></br>
                  <span className='orderAct'>Total: Getamount</span>
                 <table>
